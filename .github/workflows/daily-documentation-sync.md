@@ -116,7 +116,11 @@ safe-outputs:
       - "**/CLAUDE.md"
       - "**/GEMINI.md"
       - "**/SKILL.md"
-    protected-files: blocked
+    protected-files:
+      policy: blocked
+      # The allowlist does not override protection; README files are intended outputs.
+      exclude:
+        - README.md
 ---
 
 # Daily documentation sync
