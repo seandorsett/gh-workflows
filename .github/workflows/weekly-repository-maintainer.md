@@ -101,9 +101,13 @@ safe-outputs:
     fallback-as-issue: false
     github-token-for-extra-empty-commit: none
     allowed-files:
+      # gh-aw's **/ requires a directory level; include direct children explicitly.
+      - "src/*.py"
       - "src/**/*.py"
+      - "tests/*.py"
       - "tests/**/*.py"
       - "README.md"
+      - "docs/*.md"
       - "docs/**/*.md"
     excluded-files:
       - ".github/**"
