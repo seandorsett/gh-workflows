@@ -12,10 +12,10 @@ repository root.
 python src/greet.py
 ```
 
-Prints `Hello, World!`. Use `--name` to customize the greeting:
+Prints `Hello, World!`. Use `--recipient` to customize the greeting:
 
 ```shell
-python src/greet.py --name Ada
+python src/greet.py --recipient Ada
 ```
 
 Prints `Hello, Ada!`. Use `python src/greet.py --help` for usage information.
